@@ -39,3 +39,10 @@
 25. Picom
 26. Nitrogen
 27. JetbrainsMonoNerdFont
+
+#### Python libraries
+
+1. cuda
+2. numpy
+3. pandas
+4. pytorch
