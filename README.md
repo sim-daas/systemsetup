@@ -37,3 +37,5 @@
 23. i3
 24. Polybar
 25. Picom
+26. Nitrogen
+27. JetbrainsMonoNerdFont
