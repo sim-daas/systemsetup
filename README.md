@@ -1,6 +1,6 @@
 # System Setup
 
-### Complete Laptop Setup with Linux Mint Base OS
+### Laptop Setup with Linux Mint Base OS
 
 #### Core Software and Configuration:
 1. Nix Package Manager
