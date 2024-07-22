@@ -1,0 +1,13 @@
+2024-07-22 06:51:03 Loading main app package /nix/store/jnq5zyksl87lg62wzdw4w2bgdpnv78gs-obsidian-1.6.5/share/obsidian/obsidian.asar
+2024-07-22 06:51:03 Checking for update using Github
+2024-07-22 06:51:07 Success.
+2024-07-22 06:51:07 Latest version is 1.6.7
+2024-07-22 06:51:07 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.7/obsidian-1.6.7.asar.gz
+2024-07-22 06:51:27 Verifying hash & signature. Size= 7993245
+2024-07-22 06:51:27 Saving file
+2024-07-22 06:51:27 Update complete.
+2024-07-22 06:57:18 Loading updated app package /home/ubuntu/.config/obsidian/obsidian-1.6.7.asar
+2024-07-22 06:57:18 Checking for update using Github
+2024-07-22 06:57:22 Success.
+2024-07-22 06:57:22 Latest version is 1.6.7
+2024-07-22 06:57:22 App is up to date.

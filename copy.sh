@@ -5,7 +5,7 @@ SOURCE_DIR="$HOME/.config"
 DEST_DIR="$HOME/githubrepos/systemsetup/.config"
 
 # List of directories to copy
-DIRS=("i3")
+DIRS=("i3" "alacritty" "nixpkgs" "nvim" "obsidian" "omniverse-launcher" "picom" "polybar" "ranger" "rofi" "tmux" "fastfetch")
 
 # Create destination directory if it doesn't exist
 mkdir -p "$DEST_DIR"
