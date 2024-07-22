@@ -1,4 +1,4 @@
 git status
 git add .
-git commit -m "demo"
+git commit -m "demos"
 git push -u origin main
