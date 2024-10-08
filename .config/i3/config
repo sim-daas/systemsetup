@@ -56,7 +56,7 @@ bindsym $mod+Shift+s scratchpad show
 # Open browser
 bindsym $mod+b exec --no-startup-id "brave"
 
-
+bindsym $mod+a+s exec --no-startup-id "steam"
 
 
 #exec_always --no-startup-id alacritty --class fm,fm -e ranger
@@ -240,9 +240,9 @@ client.background       #ffffff
 
 
 # for_window [all] title_window_icon on
-default_border pixel 1
-default_floating_border pixel 1
-gaps inner 10
+default_border pixel 0
+default_floating_border pixel 0
+gaps inner 6
 
 for_window [title="Application Finder"] floating enable resize set 640 480
 for_window [title="Nitrogen"] floating enable resize set 640 480

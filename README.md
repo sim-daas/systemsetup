@@ -46,3 +46,10 @@
 2. numpy
 3. pandas
 4. pytorch
+
+### Games
+
+1. minecraft
+2. cs2
+3. steam
+4. 
