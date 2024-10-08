@@ -819,3 +819,44 @@ cd
 sudo QT_X11_NO_MITSHM=1 /nix/store/wpx66xb089rr4irvdq2xjbxdcwknbcxr-unetbootin-702/bin/.unetbootin-wrapped
 unetbootin 
 ventoy
+cd Downloads/TLauncher.v10/
+sudo java -jar TLauncher.jar 
+connman
+connman-gtk 
+cmst
+econnman-bin 
+connman
+connmand
+econnman-bin 
+connmanctl 
+./a.out 
+gcc demo.c 
+./a.out 
+gcc demo.c 
+./a.out 
+gcc area.c 
+./a.out 
+gcc area.c 
+./a.out 
+gcc greater.c 
+./a.out 
+gcc bill.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc char.c 
+./a.out 
+gcc calc.c 
+./a.out 
+gcc month.c 
+./a.out 
