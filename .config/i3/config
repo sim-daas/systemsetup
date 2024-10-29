@@ -35,12 +35,14 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-bindsym $mod+F8 exec --no-startup-id brightnessctl s 5%-
-bindsym $mod+F9 exec --no-startup-id brightnessctl s 5%+
+#bindsym $mod+F8 exec --no-startup-id brightnessctl s 5%-
+#bindsym $mod+F9 exec --no-startup-id brightnessctl s 5%+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+bindsym $mod+F8 exec --no-startup-id brightnessctl s 5%-
+bindsym $mod+F9 exec --no-startup-id brightnessctl s 5%+
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
@@ -50,7 +52,10 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec --no-startup-id "alacritty"
 # Open file manager
 #bindsym $mod+Shift+f exec --no-startup-id "caja"
+
+bindsym $mod+c exec --no-startup-id "code"
 bindsym $mod+Shift+s scratchpad show
+bindsym $mod+Shift+f exec --no-startup-id "thunar"
 # Launch Ranger in scratchpad
 #bindsym $mod+Shift+f exec --no-startup-id i3-msg 'exec ranger; move scratchpad'
 # Open browser
@@ -196,6 +201,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+Shift+z exec --no-startup-id $HOME/scripts/fzfranger.zsh
+
 
 exec_always --no-startup-id nitrogen --set-zoom-fill --random ~/Pictures/Wallpapers/
 #exec_always --no-startup-id nitrogen --restore

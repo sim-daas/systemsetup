@@ -148,3 +148,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 #source /opt/ros/jazzy/setup.zsh
+export PATH="$PATH:/home/ubuntu/.modular/bin"
+# Add this to your ~/.bashrc or ~/.zshrc file
+open_with_ranger() {
+  selected_file=$(find /home/ubuntu/ -type f | fzf --preview 'cat {}')
+  [ -n "$selected_file" ] && ranger --selectfile="$selected_file"
+}
+
+alias rzf='open_with_ranger'
+
+bindkey -s '^F' 'open_with_ranger :. ^M'
