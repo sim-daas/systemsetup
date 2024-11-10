@@ -156,5 +156,23 @@ open_with_ranger() {
 }
 
 alias rzf='open_with_ranger'
-
+push_code() {
+    # Start in the current directory
+    dir="$PWD"
+    
+    # Traverse up until we find a .git directory or reach the root
+    while [ "$dir" != "/" ]; do
+        if [ -d "$dir/.git" ]; then
+            # If .git directory is found, run push.sh from the found directory
+            (cd "$dir" && /home/ubuntu/githubrepos/backend/push.sh)
+            return
+        fi
+        # Move up one directory
+        dir=$(dirname "$dir")
+    done
+    
+    # If no git repo was found
+    echo "No git repository found in this directory or its parents."
+}
+alias push='push_code'
 bindkey -s '^F' 'open_with_ranger :. ^M'
