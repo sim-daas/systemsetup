@@ -16,7 +16,6 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
-
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -38,7 +37,7 @@ zinit cdreplay -q
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
-bindkey -e
+bindkey -v
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
