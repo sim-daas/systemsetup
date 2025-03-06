@@ -860,3 +860,43 @@ gcc calc.c
 ./a.out 
 gcc month.c 
 ./a.out 
+okular
+cd Downloads/TLauncher.v10/
+sudo java -jar TLauncher.jar 
+cd Downloads/TLauncher.v10/
+sudo java -jar TLauncher.jar 
+rustup
+rustup update
+rustup install
+rustup install -h
+rustup install --profile minimal
+rustup install --profile minimal --toolchain stable
+rustup install --profile minimal -- --toolchain
+rustup install --profile minimal -- --toolchain stable
+rustup install --profile minimal stable
+rustup update
+rustup -h
+rustup show
+shutter 
+shutter
+s
+shutter
+cd Downloads/TLauncher.v10/
+sudo java -jar TLauncher.jar 
+nvidia-smi
+nmap
+nmap -sn 10.42.0.1/24
+nmap -sn -A 10.42.0.1/24
+sudo nmap -sn -A 10.42.0.1/24
+sudo nmap -sn -O 10.42.0.1/24
+nmap -sn -O 10.42.0.1/24
+nmap -sn -A 10.42.0.1/24
+nmap -sn 10.42.0.1/24
+nmap -sn 10.42.1.1/24
+nmap -sn 10.42.0.1/24
+bluetooth
+bluetoothd
+blueman-manager 
+shutter 
+booth 
+millipixels
