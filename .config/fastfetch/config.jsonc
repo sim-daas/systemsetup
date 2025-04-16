@@ -22,11 +22,13 @@
         },
         {
             "type": "cpu",
+            "format": "{1}",
             "key": "  "
         },
         {
             "type": "gpu",
             "detectionMethod": "pci",
+            "format": "{2}",
             "key": "  "
         },
         {
