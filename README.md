@@ -1,55 +1,91 @@
 # System Setup
 
-### Laptop Setup with Linux Mint Base OS
+### Base System: Linux Mint
 
-#### Core Software and Configuration:
-1. Nix Package Manager
-2. Git
-3. Docker
-4. Distrobox
+### Core Components
+*   Nix Package Manager
+*   Git
+*   Docker
+*   Distrobox
+*   Zsh (Assumed configured, e.g., with Powerlevel10k)
 
-#### Additional Software for Enhanced Productivity:
-5. Neovim
-   - Plugin: Codeium.nvim
-6. Alacritty
-7. Brave
-8. Zsh
-9. fzf
-10. tmux
-11. Ranger
-12. Thunar
-13. zoxide
-14. ripgrep
-15. btop
-16. tgpt
-17. Obsidian
+### Window Management & Desktop Environment
+*   i3 (Window Manager)
+*   Picom (Compositor)
+*   Nitrogen (Wallpaper Manager)
+*   Thunar (File Manager)
+*   Alacritty (Terminal)
+*   JetbrainsMonoNerdFont (Font)
 
-#### Specialized Software for Robotics and Simulation:
-18. Isaac Sim
-19. ROS2 (Robot Operating System 2)
-20. Onshape
+### Development Tools
+*   Neovim (Editor)
+*   VSCode
+*   Node.js
+*   Arduino CLI
+*   Arduino IDE
+*   Git (Version Control)
 
-#### Python Development Tools:
-21. pip
-22. conda
+### Productivity & Utilities
+*   Brave (Web Browser)
+*   Obsidian (Note-taking)
+*   Ranger (Terminal File Manager)
+*   fzf (Command-line Fuzzy Finder)
+*   zoxide (Smarter Directory Changer)
+*   ripgrep (Recursive Line Searcher)
+*   fd (Simple Find Alternative)
+*   tmux (Terminal Multiplexer)
+*   tmate (Instant Terminal Sharing)
+*   btop (Resource Monitor)
+*   fastfetch (System Information Tool)
+*   tgpt (Terminal GPT Client)
+*   qpdfview (PDF Viewer)
+*   Shutter (Screenshot Tool)
+*   SimpleScreenRecorder (Screen Recorder)
 
-#### Window Management and Customization:
-23. i3
-24. Polybar
-25. Picom
-26. Nitrogen
-27. JetbrainsMonoNerdFont
+### Media & Communication
+*   Spotify
+*   VLC (Media Player)
+*   Discord
+*   WhatsApp for Linux
 
-#### Python libraries
+### Cloning and Setup
 
-1. cuda
-2. numpy
-3. pandas
-4. pytorch
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/systemsetup.git ~/systemsetup
+    cd ~/systemsetup
+    ```
+    *(Replace `your-username` with your actual GitHub username)*
+
+2.  **Copy Configuration Files:**
+    Carefully copy the desired configuration files from the cloned repository's `.config` directory to your local `~/.config` directory. **Warning:** This might overwrite your existing configurations. Back up your current configurations first.
+    ```bash
+    # Example: Copying Neovim config
+    # cp -r .config/nvim ~/.config/nvim
+
+    # Example: Copying i3 config
+    # cp -r .config/i3 ~/.config/i3
+
+    # ... copy other desired configs ...
+    ```
+    Also copy dotfiles from the repository root to your home directory:
+    ```bash
+    # Example: Copying .zshrc
+    # cp .zshrc ~/.zshrc
+
+    # Example: Copying .p10k.zsh
+    # cp .p10k.zsh ~/.p10k.zsh
+    ```
+
+### Configuration Files
+*   Most application configurations are stored within the `.config` directory in this repository and are intended to be copied to the user's `~/.config` directory.
+*   Key configurations include: Neovim (`.config/nvim/`), i3 (`.config/i3/`), Picom (`.config/picom/`), Alacritty (`.config/alacritty/`), Zsh (`.zshrc`, `.p10k.zsh`), etc.
+
+### Desktop Showcase
+*   Screenshots and desktop images showcasing the setup are stored locally in `/home/ubuntu/Pictures/`.
+*   *(Optional: Consider uploading key screenshots to the repository or an image hosting service and linking them here)*
+    *   `[Image 1 Description](link_to_image1.png)`
+    *   `[Image 2 Description](link_to_image2.png)`
 
 ### Games
-
-1. minecraft
-2. cs2
-3. steam
-4. 
+*   Minecraft
