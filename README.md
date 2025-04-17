@@ -2,8 +2,8 @@
 
 <div align="center">
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-    <img src="./images/3_002.png" alt="Desktop Screenshot 1" width="400"/>
-    <img src="./images/2_004.png" alt="Desktop Screenshot 2" width="400"/>
+    <img src="./images/3_002.png" alt="Desktop Screenshot 1" width="720"/>
+    <img src="./images/2_004.png" alt="Desktop Screenshot 2" width="720"/>
     <!-- Add more img tags here if you have more screenshots -->
   </div>
 </div>
