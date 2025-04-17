@@ -84,8 +84,8 @@
 ### Desktop Showcase
 *   Screenshots and desktop images showcasing the setup are stored locally in `/home/ubuntu/Pictures/`.
 *   *(Optional: Consider uploading key screenshots to the repository or an image hosting service and linking them here)*
-    *   `[Image 1 Description](link_to_image1.png)`
-    *   `[Image 2 Description](link_to_image2.png)`
+    *   `[Image 1 Description](/home/ubuntu/Pictures/3_002.png)`
+    *   `[Image 2 Description](/home/ubuntu/Pictures/2_004.png)`
 
 ### Games
 *   Minecraft
