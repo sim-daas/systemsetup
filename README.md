@@ -1,5 +1,13 @@
 # System Setup
 
+<div align="center">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+    <img src="./images/3_002.png" alt="Desktop Screenshot 1" width="400"/>
+    <img src="./images/2_004.png" alt="Desktop Screenshot 2" width="400"/>
+    <!-- Add more img tags here if you have more screenshots -->
+  </div>
+</div>
+
 ### Base System: Linux Mint
 
 ### Core Components
@@ -80,12 +88,6 @@
 ### Configuration Files
 *   Most application configurations are stored within the `.config` directory in this repository and are intended to be copied to the user's `~/.config` directory.
 *   Key configurations include: Neovim (`.config/nvim/`), i3 (`.config/i3/`), Picom (`.config/picom/`), Alacritty (`.config/alacritty/`), Zsh (`.zshrc`, `.p10k.zsh`), etc.
-
-### Desktop Showcase
-*   Screenshots and desktop images showcasing the setup are stored locally in `/home/ubuntu/Pictures/`.
-*   *(Optional: Consider uploading key screenshots to the repository or an image hosting service and linking them here)*
-    *   [Image 1 Description](./images/3_002.png)
-    *   [Image 2 Description](./images/2_004.png)
 
 ### Games
 *   Minecraft
