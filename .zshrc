@@ -175,3 +175,4 @@ push_code() {
 }
 alias push='push_code'
 bindkey -s '^F' 'open_with_ranger :. ^M'
+bindkey -s '^P' 'push_code :. ^M'
