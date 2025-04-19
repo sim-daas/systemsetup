@@ -176,3 +176,38 @@ push_code() {
 alias push='push_code'
 bindkey -s '^F' 'open_with_ranger :. ^M'
 bindkey -s '^P' 'push_code :. ^M'
+
+# Function to push code with a commit message
+push_with_commit() {
+    # Start in the current directory
+    dir="$PWD"
+    
+    # Traverse up until we find a .git directory or reach the root
+    while [ "$dir" != "/" ]; do
+        if [ -d "$dir/.git" ]; then
+            # Prompt for commit message
+            echo -n "Enter commit message: "
+            read commit_message
+            
+            # Check if commit message is empty
+            if [ -z "$commit_message" ]; then
+                echo "Commit message cannot be empty. Aborting."
+                return 1
+            fi
+
+            # If .git directory is found, run push.sh from the found directory with the commit message
+            (cd "$dir" && /home/ubuntu/githubrepos/backend/push.sh "$commit_message")
+            return
+        fi
+        # Move up one directory
+        dir=$(dirname "$dir")
+    done
+    
+    # If no git repo was found
+    echo "No git repository found in this directory or its parents."
+}
+
+alias pushc='push_with_commit'
+bindkey -s '\e^P' 'push_with_commit :. ^M'
+
+alias nixins='nix-env -iA'
