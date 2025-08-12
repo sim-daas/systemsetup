@@ -277,6 +277,6 @@ toggle_readme_and_push() {
 
 alias pushc='push_with_commit'
 bindkey -s '\e^P' 'push_with_commit :. ^M'
-bindkey -s '\e^G' 'toggle_readme_and_push :. ^M'
+bindkey -s '\e^G' 'toggle_readme_and_push 8 :. ^M'
 
 alias nixins='nix-env -iA'
