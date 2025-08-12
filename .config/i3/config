@@ -27,6 +27,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 #exec --no-startup-id brightnessctl
 exec_always --no-startup-id picom 
+exec --no-startup-id variety &
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -199,7 +200,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+z exec --no-startup-id $HOME/scripts/fzfranger.zsh
 
 
-exec_always --no-startup-id nitrogen --set-zoom-fill --random ~/Pictures/Wallpapers/
+#exec_always --no-startup-id nitrogen --set-zoom-fill --random ~/Pictures/Wallpapers/
 #exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
