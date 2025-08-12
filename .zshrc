@@ -207,7 +207,76 @@ push_with_commit() {
     echo "No git repository found in this directory or its parents."
 }
 
+# Function to toggle a line in Readme.md and push changes
+toggle_readme_and_push() {
+    local num_cycles=${1:-5} # Default to 5 cycles if no argument is provided
+    local readme_file="Readme.md"
+    local temp_line_prefix="🤖 This is a temporary line: "
+
+    # Check if Readme.md exists in the current directory
+    if [[ ! -f "$readme_file" ]]; then
+        echo "Error: '$readme_file' not found in the current directory."
+        echo "Please navigate to the directory containing your Readme.md."
+        return 1
+    fi
+
+    # Check if it's a Git repository
+    if [[ ! -d ".git" ]]; then
+        echo "Error: Not a Git repository."
+        echo "Please ensure you are in the root directory of your Git project."
+        return 1
+    fi
+
+    echo "Starting Readme.md toggle and push cycles ($num_cycles times)..."
+
+    for i in $(seq 1 $num_cycles); do
+        echo "--- Cycle $i of $num_cycles ---"
+
+        # --- Phase 1: Add temporary line and push ---
+        local current_timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+        local line_to_add="${temp_line_prefix}${current_timestamp}"
+
+        echo "Adding line: '$line_to_add' to $readme_file"
+        echo "$line_to_add" >> "$readme_file"
+
+        echo "Committing and pushing the added line..."
+        git add "$readme_file"
+        if git commit -m "feat: Add temporary line (cycle $i, add)"; then
+            git push origin HEAD
+        else
+            echo "Warning: No changes to commit for adding, skipping push."
+        fi
+        sleep 1 # Give a moment before next action
+
+        # --- Phase 2: Undo temporary line and push ---
+        echo "Undoing temporary line from $readme_file"
+        # Using sed to remove lines starting with the prefix
+        # Note: 'sed -i ""' is for macOS, 'sed -i' is for Linux
+        if [[ "$(uname)" == "Darwin" ]]; then
+            sed -i '' "/^${temp_line_prefix}/d" "$readme_file"
+        else
+            sed -i "/^${temp_line_prefix}/d" "$readme_file"
+        fi
+
+        echo "Committing and pushing the undone line..."
+        git add "$readme_file"
+        if git commit -m "revert: Undo temporary line (cycle $i, undo)"; then
+            git push origin HEAD
+        else
+            echo "Warning: No changes to commit for undoing, skipping push."
+        fi
+        sleep 1 # Give a moment before next action
+    done
+
+    echo "--- All cycles completed! ---"
+    echo "Your Readme.md should be back to its original state (minus any pre-existing temporary lines)."
+}
+
+
+
+
 alias pushc='push_with_commit'
 bindkey -s '\e^P' 'push_with_commit :. ^M'
+bindkey -s '\e^G' 'toggle_readme_and_push :. ^M'
 
 alias nixins='nix-env -iA'
