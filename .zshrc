@@ -280,3 +280,7 @@ bindkey -s '\e^P' 'push_with_commit :. ^M'
 bindkey -s '\e^G' 'toggle_readme_and_push 8 :. ^M'
 
 alias nixins='nix-env -iA'
+export ISAAC_ROS_WS=/home/ubuntu/workspaces/isaac_ros-dev/
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/ubuntu/.pulumi/bin

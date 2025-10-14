@@ -51,3 +51,8 @@ require("lazy").setup({
     },
   },
 })
+
+-- Disable pycodestyle and other style linters for Python
+local lint = require('lint')
+lint.linters_by_ft = lint.linters_by_ft or {}
+lint.linters_by_ft.python = {} -- Disable all Python linters if pyflakes is not available
