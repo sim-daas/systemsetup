@@ -5,5 +5,5 @@ while true; do
     sleep 1200
 
     # Send the notification
-    notify-send "Time to take a 20-minute eye break!" -u normal -t 5000 -i cup
+    notify-send "Health Check" "<span font='26'>Time to take a 20-minute eye break!</span>" -u critical -i cup
 done
